@@ -13,7 +13,7 @@ struct Home: View {
     
     var body: some View {
         TabView {
-            Menu()
+            Menu(context: persistence.container.viewContext)
                 .font(.title)
                 .environment(\.managedObjectContext, persistence.container.viewContext)
                 .tabItem({

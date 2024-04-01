@@ -18,6 +18,7 @@
 		54867F582BBB4277005A71C4 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F572BBB4277005A71C4 /* MenuList.swift */; };
 		54867F5A2BBB427E005A71C4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F592BBB427E005A71C4 /* MenuItem.swift */; };
 		54867F5D2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54867F5B2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld */; };
+		54867F5F2BBB5683005A71C4 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */; };
 		54B346E32BBAF86700EF3AE1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B346E22BBAF86700EF3AE1 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		54867F572BBB4277005A71C4 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		54867F592BBB427E005A71C4 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		54867F5C2BBB4944005A71C4 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		54B346E22BBAF86700EF3AE1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				54209AD22BBA245E003BDD7B /* littlelemonApp.swift */,
 				54B346E22BBAF86700EF3AE1 /* Onboarding.swift */,
 				5441B31D2BBB251E003624CA /* Menu.swift */,
+				54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */,
 				54867F542BBB421A005A71C4 /* FetchedObjects.swift */,
 				54867F532BBB421A005A71C4 /* Persistence.swift */,
 				54867F572BBB4277005A71C4 /* MenuList.swift */,
@@ -168,6 +171,7 @@
 				54867F582BBB4277005A71C4 /* MenuList.swift in Sources */,
 				5441B3202BBB2809003624CA /* UserProfile.swift in Sources */,
 				54867F552BBB421A005A71C4 /* Persistence.swift in Sources */,
+				54867F5F2BBB5683005A71C4 /* MenuViewModel.swift in Sources */,
 				54867F5D2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld in Sources */,
 				5441B31E2BBB251E003624CA /* Menu.swift in Sources */,
 				54867F5A2BBB427E005A71C4 /* MenuItem.swift in Sources */,
