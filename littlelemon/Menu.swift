@@ -9,17 +9,24 @@ import SwiftUI
 
 struct Menu: View {
     @State private var menuItems = [MenuItem]()
-    
-    // FetchRequest to load Dish objects from Core Data
-    @FetchRequest(
-        entity: Dish.entity(),
-        sortDescriptors: []
-        // You can add a predicate here to filter results if needed
-    ) var dishes: FetchedResults<Dish>
-    
+    @State private var searchText = ""
     
     @Environment(\.managedObjectContext) private var viewContext
     
+
+ 
+    init() {
+        _searchText = State(initialValue: "") // Initialize searchText with an empty string
+        
+        fetchRequest = FetchRequest<Dish>(
+            entity: Dish.entity(),
+            sortDescriptors: [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))]
+        )
+    }
+    var fetchRequest: FetchRequest<Dish>
+    var dishes: FetchedResults<Dish> { fetchRequest.wrappedValue }
+
+   
     var body: some View {
         VStack {
             Text("Little Lemon").font(.title)
@@ -28,6 +35,8 @@ struct Menu: View {
             Spacer()
             
             // Display the fetched Dish items in a List
+            TextField("Search menu", text: $searchText)
+                   .padding()
             List {
                 ForEach(dishes, id: \.self) { dish in
                     HStack {
@@ -87,6 +96,20 @@ struct Menu: View {
         
         
         task.resume()  // Start the network task
+    }
+    
+    func buildSortDescriptors() -> [NSSortDescriptor] {
+         return [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare))]
+     }
+    
+    
+
+    func buildPredicate() -> NSPredicate {
+        if searchText.isEmpty {
+            return NSPredicate(value: true)
+        } else {
+            return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
+        }
     }
 }
 
