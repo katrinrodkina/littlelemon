@@ -19,6 +19,8 @@
 		54867F5A2BBB427E005A71C4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F592BBB427E005A71C4 /* MenuItem.swift */; };
 		54867F5D2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54867F5B2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld */; };
 		54867F5F2BBB5683005A71C4 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */; };
+		54867F612BBB82AE005A71C4 /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F602BBB82AE005A71C4 /* DetailItem.swift */; };
+		54867F632BBB8328005A71C4 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54867F622BBB8328005A71C4 /* FoodItem.swift */; };
 		54B346E32BBAF86700EF3AE1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B346E22BBAF86700EF3AE1 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		54867F592BBB427E005A71C4 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		54867F5C2BBB4944005A71C4 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
 		54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		54867F602BBB82AE005A71C4 /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
+		54867F622BBB8328005A71C4 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		54B346E22BBAF86700EF3AE1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,8 @@
 				54209AD22BBA245E003BDD7B /* littlelemonApp.swift */,
 				54B346E22BBAF86700EF3AE1 /* Onboarding.swift */,
 				5441B31D2BBB251E003624CA /* Menu.swift */,
+				54867F622BBB8328005A71C4 /* FoodItem.swift */,
+				54867F602BBB82AE005A71C4 /* DetailItem.swift */,
 				54867F5E2BBB5683005A71C4 /* MenuViewModel.swift */,
 				54867F542BBB421A005A71C4 /* FetchedObjects.swift */,
 				54867F532BBB421A005A71C4 /* Persistence.swift */,
@@ -175,6 +181,8 @@
 				54867F5D2BBB4944005A71C4 /* ExampleDatabase.xcdatamodeld in Sources */,
 				5441B31E2BBB251E003624CA /* Menu.swift in Sources */,
 				54867F5A2BBB427E005A71C4 /* MenuItem.swift in Sources */,
+				54867F632BBB8328005A71C4 /* FoodItem.swift in Sources */,
+				54867F612BBB82AE005A71C4 /* DetailItem.swift in Sources */,
 				54867F562BBB421A005A71C4 /* FetchedObjects.swift in Sources */,
 				54209AD32BBA245E003BDD7B /* littlelemonApp.swift in Sources */,
 			);
